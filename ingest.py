@@ -11,7 +11,7 @@ from langchain.vectorstores.faiss import FAISS
 def ingest_docs():
     """Get documents from web pages."""
     # loader = ReadTheDocsLoader("./data/Get Your Hands Dirty on Clean Architecture (2019, Leanpub) - Tom Hombergs.pdf")
-    loader = UnstructuredPDFLoader("./data/Book.pdf")
+    loader = UnstructuredPDFLoader("./data/Clean Architecture A Craftsman Guide to Software Structure and Design.pdf")
 
     raw_documents = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(
